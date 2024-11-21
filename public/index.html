@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Mercado de Ações</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulador de Mercado de Ações</h1>
+    <canvas id="stockChart"></canvas>
+    <div class="controls">
+      <button id="buyButton">Comprar Ação</button>
+      <button id="sellButton">Vender Ação</button>
+    </div>
+    <div class="info">
+      <p><strong>Saldo:</strong> $<span id="balance">1000</span></p>
+      <p><strong>Preço da Ação:</strong> $<span id="stockPrice">100</span></p>
+      <p><strong>Ações Possuídas:</strong> <span id="stocksOwned">0</span></p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
